@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <style>
+    body {
+      background-image: url('https://scdcentre.com/wp-content/uploads/the-psychology-of-happiness.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+</html>
+<header>
+  <h1 style="text-align:center">Good Deed Generator</h1>
+</header>
+
+<h3 style="color:red;">When you do a good deed for someone, you make their day a little better.
+  Research shows that doing something nice for others can make your day a little better too.</h3>
+
+<p style="color:red;">Studies show that one good deed leads to another. If you perform a generous or kind act, you are
+  likely to be happier.
+  The happier you feel, the more likely you are to do another kind act.</p>
+
+<p style="color:red;">Good deeds are done on purpose. That’s different from not doing something you might normally do,
+  like not screaming at another driver who cuts you off. That doesn’t count as a good deed. Some good deeds take
+  planning.
+  Planning helps you pay attention and be mindful of the good deed you’re doing. It also helps you be mindful of the
+  other person’s needs.
+  You might help friends or family members by running errands or helping with child care. Make some cookies for a person
+  who did you a favor.
+  Clean the house or cook dinner for an older friend or relative.
+  Good deeds like these take some planning and help you understand what makes the other person happy.</p>
+
+<p style="color:red;">Doing a good deed helps you focus your thoughts outward toward others. It helps you take a step
+  outside your own world for a little while.
+  Performing good deeds can have positive effects on your health, like reducing stress.</p>
+
+<p style="color:red;">You also can do good deeds for total strangers to make their lives a little better.
+  Or giving up some of your free time to volunteer, whether it’s serving at a soup kitchen,
+  cleaning up litter, or taking elderly people to the grocery store. </p>
+
+<p align="center"><iframe width="420" height="315" src="https://www.youtube.com/embed/T4ENHVP-hi8" frameborder="0"
+    allowfullscreen></iframe></p>
+
+<p style="font-size:50px; color:red;" id="word"></p>
+<button style="margin-left: 150px;" onclick="e()">New Deed</button>
+
+<script>
+
+  var words = ["Help your neighbour", "Try some random acts of kindness ", "Help a friend in need", "Spread love  ", "Do good for the world"
+    , "Ask someone how they are doing", "Spread good cheers", "Have a smile", "Thank someone for who they are",
+    "Give blood", "Bring your own items to save waste", "Help the elderly", "Give compliments about people", "Say nice things to people",
+    "Don’t badmouth or talk about people behind their back", "Give someone a second chance"];
+  function e() {
+
+    console.log(randomword()); // outputs a random word to terminal
+
+    document.getElementById("word").innerText = randomword(); // adds [1] random words
+  }
+
+  function randomword() {
+
+    const rand = Math.floor(Math.random() * words.length);
+
+    const outword = words[rand];
+
+    return outword;
+  }
+
+</script>
